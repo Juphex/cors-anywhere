@@ -1,3 +1,14 @@
+**Create Certificate**
+´´´openssl genrsa -out key.pem
+openssl req -new -key key.pem -out csr.pem
+openssl x509 -req -days 9999 -in csr.pem -signkey key.pem -out cert.pem
+rm csr.pem
+´´´
+
+
+
+
+
 [![Build Status](https://travis-ci.org/Rob--W/cors-anywhere.svg?branch=master)](https://travis-ci.org/Rob--W/cors-anywhere)
 [![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
 
