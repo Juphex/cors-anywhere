@@ -27,7 +27,7 @@ cors_proxy.createServer({
   checkRateLimit: checkRateLimit,
   removeHeaders: [
     'cookie',
-    'cookie2',
+    //'cookie2',
     // Strip Heroku-specific headers
     'x-request-start',
     'x-request-id',
